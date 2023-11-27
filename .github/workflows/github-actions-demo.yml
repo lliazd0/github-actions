@@ -15,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{ github.event_name }}
-      - run: echo ${{ github.event.workflow_run.head_branch }}
+      - run: echo ${{ github.ref_name }}
       - run: ls
